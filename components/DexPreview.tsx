@@ -13,17 +13,18 @@ export default function DexPreview() {
           transition={{ duration: 0.8 }}
         >
           <p className="font-display tracking-[0.35em] text-xs text-cyan mb-4">
-            T2T DEX
+            T2T DEX — POWERED BY SLE
           </p>
           <h2 className="font-display text-4xl md:text-6xl font-black leading-tight mb-6">
-            Trade <span className="text-gradient">direct</span>.
+            Trade <span className="text-gradient">smart</span>.
             <br />
             No middle layer.
           </h2>
           <p className="text-slate-300 text-lg mb-10 leading-relaxed">
             The T2T DEX is the native trading module of the Two-Trader ecosystem.
-            Concentrated liquidity, canonical decisions, and anti-scam hooks —
-            built on the same chain that secures your funds.
+            It is powered by the <strong className="text-white">Smart Liquidity Engine (SLE)</strong>,
+            our original liquidity protocol that replaces the old v4 hook design.
+            SLE adapts fees and limits based on market regimes — without opacity or hidden risks.
           </p>
 
           <div className="grid grid-cols-3 gap-4 mb-10">
@@ -62,7 +63,7 @@ export default function DexPreview() {
           <div className="rounded-3xl glass p-8 relative overflow-hidden">
             <div className="flex items-center justify-between mb-6">
               <p className="font-display text-sm tracking-widest text-cyan">
-                tIMP / mUSDC
+                tT2T / mUSDC
               </p>
               <span className="text-xs px-3 py-1 rounded-full bg-neon/10 text-neon border border-neon/30">
                 LIVE
@@ -86,7 +87,7 @@ export default function DexPreview() {
 
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-xl bg-panel/60 p-4">
-                <p className="text-xs text-slate-500 mb-1">Reserve tIMP</p>
+                <p className="text-xs text-slate-500 mb-1">Reserve tT2T</p>
                 <p className="font-display font-bold text-white">1,250,000</p>
               </div>
               <div className="rounded-xl bg-panel/60 p-4">

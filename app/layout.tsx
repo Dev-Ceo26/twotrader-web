@@ -13,9 +13,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://two-trader.com"),
   title: "T2T — Two-Trader | More than a platform. A trading ecosystem.",
   description:
-    "T2T is a quantum-ready EVM chain with a canonical decision layer. Trade, analyze, grow on-chain without opacity.",
+    "T2T is a quantum-ready EVM chain with a canonical decision layer. Powered by the Smart Liquidity Engine (SLE).",
   keywords: [
-    "T2T", "Two-Trader", "DEX", "trading", "blockchain", "EVM",
+    "T2T", "Two-Trader", "DEX", "SLE", "Smart Liquidity Engine", "trading", "blockchain", "EVM",
     "quantum-safe", "QPoS", "T2T DEX"
   ],
   openGraph: {
@@ -34,7 +34,10 @@ export const metadata: Metadata = {
     images: ["/og-image.png"]
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.ico", type: "image/x-icon" }
+    ],
     apple: "/apple-touch-icon.png"
   }
 };
@@ -42,6 +45,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${orbitron.variable}`}>
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      </head>
       <body>{children}</body>
     </html>
   );
